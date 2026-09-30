@@ -43,6 +43,18 @@ const EXPENSES = [
 
 const NOTIFICATIONS: Notification[] = [
   {
+    id: "salary",
+    title: "Salary increase detected",
+    detail: "+€200 added to your monthly income",
+    date: "Today",
+    category: "Income",
+    tone: "green",
+    icon: TrendingUp,
+    amount: "+€200 / month",
+    description: "Your monthly salary appears to have increased by €200. This creates new room to strengthen your financial goals without changing your lifestyle overnight.",
+    options: ["Increase my monthly savings", "Set up automatic investing", "Review my monthly budget"],
+  },
+  {
     id: "bike",
     title: "Bike purchase detected",
     detail: "A new bike purchase was spotted",
@@ -101,7 +113,7 @@ export default function HomeApp() {
         <div className="tx-notification-brand"><span className="tx-kbc-mark">K</span><strong>KBC</strong></div>
         <div className="tx-sidebar-profile"><span className="tx-avatar">SD</span><span><strong>{CUSTOMER.name}</strong><small>Personal view</small></span><MoreHorizontal size={17} /></div>
         <nav className="tx-notification-nav" aria-label="Main navigation">
-          <button className={view === "notifications" ? "tx-nav-active" : ""} type="button" onClick={() => setView("notifications")}><Bell size={17} /><span>Notifications</span><b>3</b></button>
+          <button className={view === "notifications" ? "tx-nav-active" : ""} type="button" onClick={() => setView("notifications")}><Bell size={17} /><span>Notifications</span><b>4</b></button>
           <button className={view === "situation" ? "tx-nav-active" : ""} type="button" onClick={() => setView("situation")}><TrendingUp size={17} /><span>My situation</span></button>
         </nav>
         <div className="tx-sidebar-footer"><span className="tx-live"><i /> Live analysis</span><small>Last updated<br />September 30, 2026, 09:42</small></div>
@@ -112,7 +124,7 @@ export default function HomeApp() {
           <header className="tx-notification-header"><div><p className="tx-notification-eyebrow">Notification centre</p><h1>The signals that matter.</h1><p>We noticed a few changes in your financial life.</p></div><button type="button" className="tx-icon-button" aria-label="Notifications" onClick={() => setView("notifications")}><Bell size={19} /></button></header>
           <div className="tx-notification-layout">
           <section className="tx-notification-list" aria-label="Financial notifications">
-            <div className="tx-list-header"><strong>Recent</strong><span>3 signals</span></div>
+            <div className="tx-list-header"><strong>Recent</strong><span>4 signals</span></div>
             {NOTIFICATIONS.map((notification) => {
               const Icon = notification.icon;
               return <button key={notification.id} type="button" aria-pressed={selected.id === notification.id} className={`tx-notification-item ${selected.id === notification.id ? "tx-notification-item-selected" : ""}`} onClick={() => selectNotification(notification.id)}><span className={`tx-notification-icon tx-tone-${notification.tone}`}><Icon size={18} /></span><span className="tx-notification-copy"><strong>{notification.title}</strong><small>{notification.detail}</small><em>{notification.date}</em></span><ArrowUpRight size={16} className="tx-notification-arrow" /></button>;
