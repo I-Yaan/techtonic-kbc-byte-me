@@ -1,0 +1,46 @@
+[
+  {
+    "event_id": "EVT-001",
+    "type": "WAGE_INDEXATION_DETECTED",
+    "detected_at": "2026-09-30",
+    "payload": {
+      "employer": "Acme Belux NV",
+      "old_net": 2650.00,
+      "new_net": 2890.00,
+      "delta": 240.00,
+      "confidence": 0.98
+    }
+  },
+  {
+    "event_id": "EVT-002",
+    "type": "DEBT_AMORTIZATION_COMPLETED",
+    "detected_at": "2026-09-30",
+    "payload": {
+      "loan_type": "AUTO_LOAN",
+      "freed_cashflow": 310.00,
+      "effective_month": "November 2026"
+    }
+  },
+  {
+    "event_id": "EVT-003",
+    "type": "INVESTMENT_GAP_DETECTED",
+    "detected_at": "2026-09-30",
+    "payload": {
+      "portfolio_value": 6800.00,
+      "monthly_auto_invest": 0.00,
+      "suggested_monthly_amount": 250.00,
+      "reason": "surplus_available_after_safety_buffer"
+    }
+  },
+  {
+    "event_id": "EVT-004",
+    "type": "SPENDING_PATTERN_DETECTED",
+    "detected_at": "2026-09-30",
+    "payload": {
+      "category": "DELIVERY",
+      "monthly_average": 186.00,
+      "change_vs_previous_period": 0.22,
+      "potential_monthly_saving": 80.00
+    }
+  }
+]

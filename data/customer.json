@@ -1,0 +1,26 @@
+{
+  "customer_id": "BE-982144",
+  "name": "Sarah De Smet",
+  "age": 24,
+  "risk_profile": "BALANCED",
+  "accounts": {
+    "checking": { "iban": "BE68 5390 0754 2816", "balance": 3450.00, "currency": "EUR" },
+    "savings": { "iban": "BE12 7320 1184 9042", "balance": 14200.00, "rate": 0.015 },
+    "bolero_portfolio": { "id": "BOL-4091", "current_valuation": 6800.00, "monthly_auto_invest": 0.00 }
+  },
+  "liabilities": [
+    { "type": "AUTO_LOAN", "monthly_payment": 310.00, "end_date": "2026-10-31" }
+  ],
+  "monthly_cashflow": {
+    "net_income": 2650.00,
+    "fixed_outflows": 1450.00,
+    "variable_burn_avg": 720.00,
+    "discretionary_surplus": 480.00
+  },
+  "safety_buffer_target": 7500.00,
+  "spending_snapshot": [
+    { "category": "DELIVERY", "label": "Livraisons", "monthly_average": 186.00, "trend": "+22%" },
+    { "category": "SUBSCRIPTIONS", "label": "Abonnements", "monthly_average": 74.00, "active_count": 3 },
+    { "category": "LEISURE", "label": "Sorties", "monthly_average": 142.00, "trend": "STABLE" }
+  ]
+}
