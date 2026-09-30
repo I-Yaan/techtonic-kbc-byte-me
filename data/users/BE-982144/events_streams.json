@@ -1,0 +1,22 @@
+[
+  {
+    "event_id": "EVT-001",
+    "type": "WAGE_INDEXATION_DETECTED",
+    "payload": {
+      "employer": "Acme Belux NV",
+      "old_net": 2650.00,
+      "new_net": 2890.00,
+      "delta": 240.00,
+      "confidence": 0.98
+    }
+  },
+  {
+    "event_id": "EVT-002",
+    "type": "DEBT_AMORTIZATION_COMPLETED",
+    "payload": {
+      "loan_type": "AUTO_LOAN",
+      "freed_cashflow": 310.00,
+      "effective_month": "November 2026"
+    }
+  }
+]
